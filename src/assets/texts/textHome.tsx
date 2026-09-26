@@ -20,3 +20,8 @@ export const ButPrimaSeduta: ButtonTypes = {
   text: "la tua prima seduta",
   link: "/",
 }
+
+export const ArrowApproccio: ButtonTypes = {
+  text: "Scopri di più sul mio approccio",
+  link: "/",
+}
