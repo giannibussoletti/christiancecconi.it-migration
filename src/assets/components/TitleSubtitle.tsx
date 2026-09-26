@@ -1,6 +1,6 @@
-import type { TitleSubtitleProps } from "../types"
+import type { TitleSubtitleTypes } from "../types"
 
-const TitleSubtitle = ({ textProp }: TitleSubtitleProps) => {
+const TitleSubtitle = (textProp: TitleSubtitleTypes) => {
   return (
     <>
       <h2>{textProp.title}</h2>

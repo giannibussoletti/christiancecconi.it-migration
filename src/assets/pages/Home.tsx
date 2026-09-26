@@ -1,7 +1,14 @@
+import { Container } from "react-bootstrap"
 import TitleSubtitle from "../components/TitleSubtitle"
-import { lavorareInsieme } from "../texts"
+import InfoCard from "../components/InfoCard"
+import { ICStress, lavorareInsieme } from "../texts"
 const Home = () => {
-  return <TitleSubtitle textProp={lavorareInsieme} />
+  return (
+    <Container>
+      <TitleSubtitle {...lavorareInsieme} />
+      <InfoCard {...ICStress} />
+    </Container>
+  )
 }
 
 export default Home
