@@ -1,0 +1,56 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-display: swap;
+  font-family: "Poltawski Nowy";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/poltawski-nowy-v5-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/roboto-v51-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/roboto-v51-latin-regular.woff2") format("woff2");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 22pt;
+  color: #1d1d1b;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-stretch: condensed;
+  color: #de007e;
+  font-size: 1.35em;
+  font-weight: 400;
+  font-kerning: normal;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-family: "Poltawski Nowy", serif;
+  color: #0d4571;
+  font-weight: 500;
+  font-size: 2.08em;
+  margin-bottom: 10px;
+}
