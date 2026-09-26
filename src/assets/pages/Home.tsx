@@ -1,5 +1,7 @@
+import TitleSubtitle from "../components/TitleSubtitle"
+import { lavorareInsieme } from "../texts"
 const Home = () => {
-  return <div>Home</div>
+  return <TitleSubtitle textProp={lavorareInsieme} />
 }
 
 export default Home
