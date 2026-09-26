@@ -11,3 +11,8 @@ export type InfoCardTypes = {
   title: string
   text: React.ReactNode
 }
+
+export type ButtonTypes = {
+  text: string
+  link: string
+}

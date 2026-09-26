@@ -1,28 +1,5 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-
-@font-face {
-  font-display: swap;
-  font-family: "Poltawski Nowy";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/poltawski-nowy-v5-latin-500.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/fonts/roboto-v51-latin-300.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/roboto-v51-latin-regular.woff2") format("woff2");
-}
+@import "fontFace.css";
 
 html {
   scroll-behavior: smooth;
@@ -70,4 +47,18 @@ h3 {
   text-transform: uppercase;
   font-stretch: condensed;
   color: #de007e;
+}
+
+//BUTTON
+
+.theme-button {
+  font-weight: 900;
+  filter: drop-shadow(4px 4px 5px #878787);
+  background-color: #de007e;
+  &:focus {
+    background-color: #de007e !important;
+  }
+  &:hover {
+    background-color: #bd076c;
+  }
 }

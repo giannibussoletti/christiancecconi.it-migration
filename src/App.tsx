@@ -13,9 +13,9 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contatti" element={<Contatti />} />
         <Route path="/chi-sono" element={<ChiSono />} />
-        <Route path="/la-seduta-online/il-mio-approccio" element={<Approccio />} />
-        <Route path="/la-seduta-online/come-funziona" element={<ComeFunziona />} />
-        <Route path="/la-seduta-online/i-primi-passi" element={<PrimiPassi />} />
+        <Route path="/seduta-online/il-mio-approccio" element={<Approccio />} />
+        <Route path="/seduta-online/come-funziona" element={<ComeFunziona />} />
+        <Route path="/seduta-online/i-primi-passi" element={<PrimiPassi />} />
       </Routes>
     </Router>
   )
