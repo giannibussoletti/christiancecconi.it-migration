@@ -8,8 +8,9 @@ export type TitleSubtitleTypes = {
 
 export type InfoCardTypes = {
   icon: IconDefinition
-  title: string
+  title?: string
   text: React.ReactNode
+  isBlack: boolean
 }
 
 export type ButtonTypes = {
