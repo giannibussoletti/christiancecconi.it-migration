@@ -6,7 +6,7 @@ import type { ButtonTypes } from "../types"
 const MoreInfoArrow = (arrowProps: ButtonTypes) => {
   const nav = useNavigate()
   return (
-    <Row>
+    <Row className="mb-3">
       <Col className="more-info-arrow" onClick={() => nav(arrowProps.link)}>
         {arrowProps.text}
         <FontAwesomeIcon className="ps-1" icon={faArrowRightLong} />
