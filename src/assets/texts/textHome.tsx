@@ -14,6 +14,7 @@ export const ICStress: InfoCardTypes = {
   icon: faHeart,
   title: "Gestione dello Stress e Autostima:",
   text: `Se senti di non essere mai "abbastanza" o se l'ansia quotidiana ti toglie energie, lavoriamo per rafforzare la tua autoefficacia e imparare a gestire le pressioni esterne.`,
+  isBlack: false,
 }
 
 export const ButPrimaSeduta: ButtonTypes = {
