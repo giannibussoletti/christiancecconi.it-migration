@@ -85,11 +85,11 @@ const ButPrimaSeduta: ButtonTypes = {
 }
 
 const ButComeFunge: ButtonTypes = {
-  text: "come funziona una seduta online",
+  text: "la seduta online",
   link: "/",
 }
 
-export const LiButtons: ButtonTypes[] = [ButPrimaSeduta, ButComeFunge]
+export const LiButtons: ButtonTypes[] = [ButComeFunge, ButPrimaSeduta]
 
 export const ArrowApproccio: ButtonTypes = {
   text: "Scopri di più sul mio approccio",
