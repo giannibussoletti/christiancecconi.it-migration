@@ -10,11 +10,7 @@ import type { ButtonTypes, InfoCardTypes, TitleSubtitleTypes } from "../../types
 export const lavorareInsieme: TitleSubtitleTypes = {
   // Abbreviato in Li
   title: "Ciò su cui possiamo lavorare insieme",
-  subtitle: (
-    <>
-      Alcuni dei temi che potremo affrontare <br /> nelle nostre sedute online
-    </>
-  ),
+  subtitle: "Alcuni dei temi che potremo affrontare nelle nostre sedute online",
 }
 
 export const LITextTop = (

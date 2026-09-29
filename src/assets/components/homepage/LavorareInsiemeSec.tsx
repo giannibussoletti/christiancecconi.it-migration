@@ -13,9 +13,7 @@ const LavorareInsiemeSec = () => {
   return (
     <>
       <Row>
-        <Col>
-          <TitleSubtitle {...lavorareInsieme} />
-        </Col>
+        <TitleSubtitle {...lavorareInsieme} />
       </Row>
       <Row xs={1} className="mb-xl-4">
         <Col lg={3}>
@@ -28,7 +26,7 @@ const LavorareInsiemeSec = () => {
       <Row xs={1} xl={3}>
         {LiIcArray.map((card) => {
           return (
-            <Col key={card.title}>
+            <Col key={card.title} className="p-0">
               <InfoCard {...card} />
             </Col>
           )
