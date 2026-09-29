@@ -86,8 +86,3 @@ const ButComeFunge: ButtonTypes = {
 }
 
 export const LiButtons: ButtonTypes[] = [ButComeFunge, ButPrimaSeduta]
-
-export const ArrowApproccio: ButtonTypes = {
-  text: "Scopri di più sul mio approccio",
-  link: "/",
-}
