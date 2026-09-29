@@ -1,5 +1,5 @@
 import { Col, Row, Image } from "react-bootstrap"
-import TitleSubtitle from "../TitleSubtitle"
+import TitleSubtitle from "../../components/TitleSubtitle"
 import {
   lavorareInsieme,
   LiButtons,
@@ -7,8 +7,8 @@ import {
   LITextBottom,
   LITextTop,
 } from "../../texts/home/T_LavoreInsieme"
-import InfoCard from "../InfoCard"
-import ThemeButton from "../ThemeButton"
+import InfoCard from "../../components/InfoCard"
+import ThemeButton from "../../components/ThemeButton"
 const LavorareInsiemeSec = () => {
   return (
     <>
