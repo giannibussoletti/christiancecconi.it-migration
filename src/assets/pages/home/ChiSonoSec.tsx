@@ -15,7 +15,7 @@ const ChiSonoSec = () => {
             <Col>
               <Image src="/img/chi-sono-ph-m.jpg" className="w-100 main-imgs d-lg-none" />
             </Col>
-            <Col className="my-4 my-lg-0">{CSText}</Col>
+            <Col className="mt-4 mb-2 my-lg-0">{CSText}</Col>
             <MoreInfoArrow {...ArrowLeggi} />
           </Row>
         </Col>

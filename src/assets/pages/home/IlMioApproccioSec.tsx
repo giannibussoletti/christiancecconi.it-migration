@@ -15,7 +15,7 @@ const IlMioApproccioSec = () => {
         </Col>
         <Col lg={7} xl={6} xxl={9}>
           <Row xs={1}>
-            <Col className="my-4 my-lg-0">{ImaText}</Col>
+            <Col className="mt-4 mb-2 my-lg-0">{ImaText}</Col>
             <MoreInfoArrow {...ArrowApproccio} />
           </Row>
         </Col>

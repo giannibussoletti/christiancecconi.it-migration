@@ -6,17 +6,17 @@ import SocialSec from "./home/SocialSec"
 
 const Home = () => {
   return (
-    <Container className="px-5">
-      <div className="mb-5">
+    <Container className="px-4">
+      <div className="mb-4 mb-lg-5">
         <LavorareInsiemeSec />
       </div>
-      <div className="mb-5">
+      <div className="mb-4 mb-md-5">
         <ChiSonoSec />
       </div>
-      <div className="mb-5">
+      <div className="mb-4 mb-md-5">
         <IlMioApproccioSec />
       </div>
-      <div className="mb-5 mt-4">
+      <div className="my-4 mb-md-5">
         <SocialSec />
       </div>
     </Container>

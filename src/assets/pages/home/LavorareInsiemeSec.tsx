@@ -15,7 +15,7 @@ const LavorareInsiemeSec = () => {
       <Row>
         <TitleSubtitle {...lavorareInsieme} />
       </Row>
-      <Row xs={1} className="mb-xl-4">
+      <Row xs={1} className="mb-2 mb-lg-4">
         <Col lg={3}>
           <Image src="/img/flower-hp.jpg" className="w-100 main-imgs" />
         </Col>

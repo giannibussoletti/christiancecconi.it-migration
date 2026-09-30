@@ -30,7 +30,7 @@ const SocialSec = () => {
         <Row>
           <Col>
             {instagram && instaPostGenerator(instagram, 1)}
-            <Row className="p-5">
+            <Row className="p-2 p-sm-5">
               <Col className="d-flex flex-column justify-content-center">
                 <Image src="/svg/logo.svg" />
               </Col>
@@ -38,6 +38,7 @@ const SocialSec = () => {
                 {socialArray.map((social) => {
                   return (
                     <Image
+                      key={social.imgLink}
                       className="cursor-pointer"
                       src={social.imgLink}
                       onClick={() => window.open(social.pageLink, "_blank")}
