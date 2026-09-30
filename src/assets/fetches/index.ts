@@ -2,7 +2,7 @@ import type { InstagramTypes } from "./fetchTypes"
 
 export const fetchInsta = async (): Promise<InstagramTypes[]> => {
   try {
-    const res = await fetch(import.meta.env.VITE_FETCH_URL + "/public/cinemas")
+    const res = await fetch(import.meta.env.VITE_FETCH_URL)
 
     if (!res.ok) {
       console.log(res)
