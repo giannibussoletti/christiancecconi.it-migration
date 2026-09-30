@@ -1,0 +1,97 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "fontFace.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 22pt;
+  color: #1d1d1b;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-stretch: condensed;
+  color: #de007e;
+  font-size: 1.35em;
+  font-weight: 400;
+  font-kerning: normal;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-family: "Poltawski Nowy", serif;
+  color: #0d4571;
+  font-weight: 500;
+  font-size: 2.08em;
+  margin-bottom: 10px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+//INFO CARD PINK
+
+.icon-e-serv {
+  padding: 20px;
+}
+.icon-e-serv,
+.main-imgs {
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tit-serv {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 18pt;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-stretch: condensed;
+  color: #de007e;
+}
+
+// INFO CARD BLACK
+.prep-tera {
+  font-style: italic;
+  font-weight: 500;
+}
+
+//BUTTON
+
+.theme-button {
+  font-weight: 900;
+  filter: drop-shadow(4px 4px 5px #878787);
+  background-color: #de007e;
+  &:focus {
+    background-color: #de007e !important;
+  }
+  &:hover {
+    background-color: #bd076c;
+  }
+}
+
+//MORE INFO ARROW
+.more-info-arrow {
+  text-transform: uppercase;
+  font-stretch: condensed;
+  color: #de007e;
+  font-size: 1.3em;
+  font-weight: 400;
+  font-kerning: normal;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+//CURSOR POINTER
+.cursor-pointer {
+  cursor: pointer;
+}
