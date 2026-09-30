@@ -17,3 +17,8 @@ export type ButtonTypes = {
   text: string
   link: string
 }
+
+export type SocialArrayTypes = {
+  imgLink: string
+  pageLink: string
+}

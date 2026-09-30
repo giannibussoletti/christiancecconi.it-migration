@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap"
 import LavorareInsiemeSec from "./home/LavorareInsiemeSec"
 import ChiSonoSec from "./home/ChiSonoSec"
 import IlMioApproccioSec from "./home/IlMioApproccioSec"
+import SocialSec from "./home/SocialSec"
 
 const Home = () => {
   return (
@@ -14,6 +15,9 @@ const Home = () => {
       </div>
       <div className="mb-5">
         <IlMioApproccioSec />
+      </div>
+      <div className="mb-5 mt-4">
+        <SocialSec />
       </div>
     </Container>
   )
