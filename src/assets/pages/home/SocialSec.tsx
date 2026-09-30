@@ -24,7 +24,7 @@ const SocialSec = () => {
             <p className="fst-italic">
               {instagram && instagram[0].caption.slice(0, 200)}...{" "}
               <span
-                className="fw-bold fst-normal"
+                className="fw-bold fst-normal cursor-pointer"
                 onClick={() => window.open(instagram && instagram[0].permalink, "_blank")}>
                 Vedi il resto del post
               </span>
@@ -42,7 +42,7 @@ const SocialSec = () => {
             <p className="fst-italic d-none d-lg-block">
               {instagram && instagram[1].caption.slice(0, 200)}...{" "}
               <span
-                className="fw-bold fst-normal"
+                className="fw-bold fst-normal cursor-pointer"
                 onClick={() => window.open(instagram && instagram[1].permalink, "_blank")}>
                 Vedi il resto del post
               </span>
