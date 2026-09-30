@@ -16,7 +16,7 @@ const Home = () => {
       <div className="mb-5">
         <IlMioApproccioSec />
       </div>
-      <div>
+      <div className="mb-5 mt-4">
         <SocialSec />
       </div>
     </Container>
