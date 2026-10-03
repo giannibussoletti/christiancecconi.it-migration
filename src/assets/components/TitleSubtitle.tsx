@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap"
-import type { TitleSubtitleTypes } from "../types"
+import type { TitledBlock } from "../types"
 
-const TitleSubtitle = (textProp: TitleSubtitleTypes) => {
+const TitleSubtitle = (textProp: TitledBlock) => {
   return (
     <Col className="mb-1">
       <h2>{textProp.title}</h2>

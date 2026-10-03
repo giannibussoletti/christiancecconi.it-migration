@@ -45,3 +45,11 @@
   font-weight: 900;
   src: url("/fonts/roboto-v51-latin-900.woff2") format("woff2");
 }
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/roboto-condensed-v31-latin-600.woff2") format("woff2");
+}

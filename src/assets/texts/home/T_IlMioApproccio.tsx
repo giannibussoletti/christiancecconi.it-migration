@@ -1,6 +1,6 @@
-import type { ButtonTypes, TitleSubtitleTypes } from "../../types"
+import type { LinkItem, TitledBlock } from "../../types"
 
-export const mioApproccio: TitleSubtitleTypes = {
+export const mioApproccio: TitledBlock = {
   title: "Il mio approccio",
   subtitle: "Oltre le parole, e dentro le tue passioni	",
 }
@@ -21,7 +21,7 @@ export const ImaText = (
   </>
 )
 
-export const ArrowApproccio: ButtonTypes = {
+export const ArrowApproccio: LinkItem = {
   text: "scopri di più sul mio approccio",
   link: "/",
 }

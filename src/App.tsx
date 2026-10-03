@@ -5,19 +5,28 @@ import ChiSono from "./assets/pages/ChiSono"
 import Approccio from "./assets/pages/la_seduta_online/Approccio"
 import ComeFunziona from "./assets/pages/la_seduta_online/ComeFunziona"
 import PrimiPassi from "./assets/pages/la_seduta_online/PrimiPassi"
+import Footer from "./assets/components/Footer"
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contatti" element={<Contatti />} />
-        <Route path="/chi-sono" element={<ChiSono />} />
-        <Route path="/seduta-online/il-mio-approccio" element={<Approccio />} />
-        <Route path="/seduta-online/come-funziona" element={<ComeFunziona />} />
-        <Route path="/seduta-online/i-primi-passi" element={<PrimiPassi />} />
-      </Routes>
-    </Router>
+    <>
+      <header></header>
+      <main>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contatti" element={<Contatti />} />
+            <Route path="/chi-sono" element={<ChiSono />} />
+            <Route path="/seduta-online/il-mio-approccio" element={<Approccio />} />
+            <Route path="/seduta-online/come-funziona" element={<ComeFunziona />} />
+            <Route path="/seduta-online/i-primi-passi" element={<PrimiPassi />} />
+          </Routes>
+        </Router>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   )
 }
 

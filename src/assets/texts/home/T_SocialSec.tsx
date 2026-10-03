@@ -1,6 +1,6 @@
-import type { TitleSubtitleTypes } from "../../types"
+import type { TitledBlock } from "../../types"
 
-export const socialTitle: TitleSubtitleTypes = {
+export const socialTitle: TitledBlock = {
   title: "Puoi trovarmi anche sui social",
   subtitle: "Uno spazio di condivisione di letture, momenti di vita, e riflessioni",
 }
