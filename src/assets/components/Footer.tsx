@@ -5,11 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const Footer = () => {
   return (
     <Container>
-      <Row>
-        <Col>
-          <h4>
-            <Image src="/svg/logo-bianco.svg" />
-          </h4>
+      <Row className="g-5">
+        <Col className="d-flex justify-content-center align-items-start">
+          <Image width={150} src="/svg/logo-bianco.svg" />
         </Col>
         <Col>
           <h4>Pagine</h4>
@@ -52,13 +50,15 @@ const Footer = () => {
             </Col>
             <Col>
               <h4>Policy</h4>
-              {linkPolicy.map((policy) => {
-                return (
-                  <li key={policy.href}>
-                    <a href={policy.href}>{policy.trigger}</a>
-                  </li>
-                )
-              })}
+              <ul>
+                {linkPolicy.map((policy) => {
+                  return (
+                    <li key={policy.href}>
+                      <a href={policy.href}>{policy.trigger}</a>
+                    </li>
+                  )
+                })}
+              </ul>
             </Col>
           </Row>
         </Col>
