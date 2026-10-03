@@ -17,3 +17,8 @@ export type LinkItem = {
   trigger: string
   href: string
 }
+
+export type LinkSocial = {
+  icon: IconDefinition
+  href: string
+}

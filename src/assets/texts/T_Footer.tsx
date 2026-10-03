@@ -1,6 +1,32 @@
-import type { TitledBlock } from "../types"
+import { faSquareFacebook, faSquareInstagram } from "@fortawesome/free-brands-svg-icons"
+import type { LinkItem, LinkSocial, TitledBlock } from "../types"
 
-export const linkPagine = {}
+export const linkPagine: LinkItem[] = [
+  {
+    trigger: "Home",
+    href: "/",
+  },
+  {
+    trigger: "Chi Sono",
+    href: "/",
+  },
+  {
+    trigger: "Contatti",
+    href: "/",
+  },
+  {
+    trigger: "Come funziona la seduta online",
+    href: "/",
+  },
+  {
+    trigger: "I passi verso la tua prima seduta",
+    href: "/",
+  },
+  {
+    trigger: "Il mio Approccio",
+    href: "/",
+  },
+]
 
 export const alboAndIva: TitledBlock[] = [
   {
@@ -20,5 +46,21 @@ export const alboAndIva: TitledBlock[] = [
         N° <strong>17415021009</strong>
       </p>
     ),
+  },
+]
+
+export const linkSocial: LinkSocial[] = [
+  { icon: faSquareFacebook, href: "/" },
+  { icon: faSquareInstagram, href: "/" },
+]
+
+export const linkPolicy: LinkItem[] = [
+  {
+    trigger: "Privacy Policy",
+    href: "/",
+  },
+  {
+    trigger: "Cookie Policy",
+    href: "/",
   },
 ]

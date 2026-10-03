@@ -1,5 +1,6 @@
 import { Col, Container, Row, Image } from "react-bootstrap"
-import { alboAndIva } from "../texts/T_Footer"
+import { alboAndIva, linkPagine, linkPolicy, linkSocial } from "../texts/T_Footer"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Footer = () => {
   return (
@@ -12,6 +13,15 @@ const Footer = () => {
         </Col>
         <Col>
           <h4>Pagine</h4>
+          <ul>
+            {linkPagine.map((pag) => {
+              return (
+                <li key={pag.href}>
+                  <a href={pag.href}>{pag.trigger}</a>
+                </li>
+              )
+            })}
+          </ul>
         </Col>
         <Col>
           <Row xs={1}>
@@ -29,9 +39,26 @@ const Footer = () => {
           <Row xs={1}>
             <Col>
               <h4>Social</h4>
+              {linkSocial.map((social) => {
+                return (
+                  <FontAwesomeIcon
+                    size="xl"
+                    onClick={() => window.open(social.href, "_blank")}
+                    key={social.href}
+                    icon={social.icon}
+                  />
+                )
+              })}
             </Col>
             <Col>
               <h4>Policy</h4>
+              {linkPolicy.map((policy) => {
+                return (
+                  <li key={policy.href}>
+                    <a href={policy.href}>{policy.trigger}</a>
+                  </li>
+                )
+              })}
             </Col>
           </Row>
         </Col>
