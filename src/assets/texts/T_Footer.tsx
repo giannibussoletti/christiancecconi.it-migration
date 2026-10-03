@@ -1,6 +1,8 @@
-import type { FooterTypes } from "../types"
+import type { TitledBlock } from "../types"
 
-export const alboAndIva: FooterTypes[] = [
+export const linkPagine = {}
+
+export const alboAndIva: TitledBlock[] = [
   {
     title: "iscrizione albo",
     content: (

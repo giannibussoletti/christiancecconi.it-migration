@@ -1,8 +1,8 @@
 import { Button } from "react-bootstrap"
 import { useNavigate } from "react-router"
-import type { ButtonTypes } from "../types"
+import type { LinkItem } from "../types"
 
-const ThemeButton = (buttonProps: ButtonTypes) => {
+const ThemeButton = (buttonProps: LinkItem) => {
   const nav = useNavigate()
 
   return (

@@ -5,12 +5,12 @@ import {
   faMap,
   faPerson,
 } from "@fortawesome/free-solid-svg-icons"
-import type { ButtonTypes, InfoCardTypes, TitleSubtitleTypes } from "../../types"
+import type { LinkItem, InfoCard, TitledBlock } from "../../types"
 
-export const lavorareInsieme: TitleSubtitleTypes = {
+export const lavorareInsieme: TitledBlock = {
   // Abbreviato in Li
   title: "Ciò su cui possiamo lavorare insieme",
-  subtitle: "Alcuni dei temi che potremo affrontare nelle nostre sedute online",
+  content: "Alcuni dei temi che potremo affrontare nelle nostre sedute online",
 }
 
 export const LITextTop = (
@@ -34,55 +34,49 @@ export const LITextBottom = (
   </>
 )
 
-const IcStress: InfoCardTypes = {
+const IcStress: InfoCard = {
   icon: faFaceFrownOpen,
   title: "Gestione dello Stress e Autostima:",
   text: `Se senti di non essere mai "abbastanza" o se l'ansia quotidiana ti toglie energie, lavoriamo per rafforzare la tua autoefficacia e imparare a gestire le pressioni esterne.`,
   isBlack: false,
 }
 
-const IcRelazione: InfoCardTypes = {
+const IcRelazione: InfoCard = {
   icon: faHeartCrack,
   title: "Difficoltà all’interno di una relazione:",
   text: `L'amore e la convivenza sono sfide complesse. Metto a tua disposizione uno spazio neutro per esplorare le difficoltà comunicative, le incomprensioni o per gestire la fine di una storia`,
   isBlack: false,
 }
-const IcScelteVita: InfoCardTypes = {
+const IcScelteVita: InfoCard = {
   icon: faMap,
   title: "Momenti di Svolta e Scelte di Vita:",
   text: `Laurea, cambio lavoro, trasferimenti o semplicemente la sensazione di "non sapere cosa fare da grandi". Ti supporto nel fare chiarezza per prendere decisioni in piena consapevolezza.`,
   isBlack: false,
 }
 
-const IcAltroPaese: InfoCardTypes = {
+const IcAltroPaese: InfoCard = {
   icon: faEarthAmericas,
   title: "Vivere e lavorare in un altro paese:",
   text: `Trasferirsi all'estero è un'avventura, ma porta con sé solitudine e disorientamento. Ti aiuto a ritrovare il tuo equilibrio tra due culture, gestendo la distanza dagli affetti e rafforzando le tue risorse.`,
   isBlack: false,
 }
-const IcLutto: InfoCardTypes = {
+const IcLutto: InfoCard = {
   icon: faPerson,
   title: "Elaborazione del Lutto e delle Perdite:",
   text: `Perdere qualcuno o qualcosa di importante è doloroso. Può essere necessario un supporto delicato per attraversare questo momento e integrare la perdita nella tua storia di vita.`,
   isBlack: false,
 }
 
-export const LiIcArray: InfoCardTypes[] = [
-  IcStress,
-  IcRelazione,
-  IcScelteVita,
-  IcAltroPaese,
-  IcLutto,
-]
+export const LiIcArray: InfoCard[] = [IcStress, IcRelazione, IcScelteVita, IcAltroPaese, IcLutto]
 
-const ButPrimaSeduta: ButtonTypes = {
-  text: "la tua prima seduta",
-  link: "/",
+const ButPrimaSeduta: LinkItem = {
+  trigger: "la tua prima seduta",
+  href: "/",
 }
 
-const ButComeFunge: ButtonTypes = {
-  text: "la seduta online",
-  link: "/",
+const ButComeFunge: LinkItem = {
+  trigger: "la seduta online",
+  href: "/",
 }
 
-export const LiButtons: ButtonTypes[] = [ButComeFunge, ButPrimaSeduta]
+export const LiButtons: LinkItem[] = [ButComeFunge, ButPrimaSeduta]

@@ -1,6 +1,6 @@
-import type { SocialArrayTypes } from "../types"
+import type { LinkItem } from "../types"
 
-export const socialArray: SocialArrayTypes[] = [
+export const socialArray: LinkItem[] = [
   { imgLink: "/svg/fb-button.svg", pageLink: "https://www.facebook.com/psicologochristiancecconi" },
   {
     imgLink: "/svg/insta-button.svg",
