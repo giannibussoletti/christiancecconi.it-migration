@@ -50,7 +50,7 @@ const Footer = () => {
               <ul>
                 {linkPolicy.map((policy) => {
                   return (
-                    <li key={policy.href}>
+                    <li key={policy.trigger}>
                       <a href={policy.href}>{policy.trigger}</a>
                     </li>
                   )

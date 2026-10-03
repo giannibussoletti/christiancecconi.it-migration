@@ -1,7 +1,7 @@
 import { faHeadphones, faHourglassHalf, faWifi } from "@fortawesome/free-solid-svg-icons"
-import type { InfoCard } from "../types"
+import type { InfoCardTypes } from "../types"
 
-export const ICSedute: InfoCard[] = [
+export const ICSedute: InfoCardTypes[] = [
   {
     icon: faHeadphones,
     text: `Trovare una stanza riservata dove sei certo/a di non essere ascoltato/a (l'uso delle cuffie è consigliato).`,

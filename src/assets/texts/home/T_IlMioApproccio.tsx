@@ -2,7 +2,7 @@ import type { LinkItem, TitledBlock } from "../../types"
 
 export const mioApproccio: TitledBlock = {
   title: "Il mio approccio",
-  subtitle: "Oltre le parole, e dentro le tue passioni	",
+  content: "Oltre le parole, e dentro le tue passioni	",
 }
 
 export const ImaText = (
@@ -22,6 +22,6 @@ export const ImaText = (
 )
 
 export const ArrowApproccio: LinkItem = {
-  text: "scopri di più sul mio approccio",
-  link: "/",
+  trigger: "scopri di più sul mio approccio",
+  href: "/",
 }

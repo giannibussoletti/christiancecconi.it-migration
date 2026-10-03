@@ -6,7 +6,7 @@ export type TitledBlock = {
   content?: React.ReactNode
 }
 
-export type InfoCard = {
+export type InfoCardTypes = {
   icon: IconDefinition
   title?: string
   text: React.ReactNode

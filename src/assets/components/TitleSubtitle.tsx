@@ -5,7 +5,7 @@ const TitleSubtitle = (textProp: TitledBlock) => {
   return (
     <Col className="mb-1">
       <h2>{textProp.title}</h2>
-      {textProp.subtitle && <h3>{textProp.subtitle}</h3>}
+      {textProp.content && <h3>{textProp.content}</h3>}
     </Col>
   )
 }

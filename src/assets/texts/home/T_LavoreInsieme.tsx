@@ -5,7 +5,7 @@ import {
   faMap,
   faPerson,
 } from "@fortawesome/free-solid-svg-icons"
-import type { LinkItem, InfoCard, TitledBlock } from "../../types"
+import type { LinkItem, InfoCardTypes, TitledBlock } from "../../types"
 
 export const lavorareInsieme: TitledBlock = {
   // Abbreviato in Li
@@ -34,40 +34,46 @@ export const LITextBottom = (
   </>
 )
 
-const IcStress: InfoCard = {
+const IcStress: InfoCardTypes = {
   icon: faFaceFrownOpen,
   title: "Gestione dello Stress e Autostima:",
   text: `Se senti di non essere mai "abbastanza" o se l'ansia quotidiana ti toglie energie, lavoriamo per rafforzare la tua autoefficacia e imparare a gestire le pressioni esterne.`,
   isBlack: false,
 }
 
-const IcRelazione: InfoCard = {
+const IcRelazione: InfoCardTypes = {
   icon: faHeartCrack,
   title: "Difficoltà all’interno di una relazione:",
   text: `L'amore e la convivenza sono sfide complesse. Metto a tua disposizione uno spazio neutro per esplorare le difficoltà comunicative, le incomprensioni o per gestire la fine di una storia`,
   isBlack: false,
 }
-const IcScelteVita: InfoCard = {
+const IcScelteVita: InfoCardTypes = {
   icon: faMap,
   title: "Momenti di Svolta e Scelte di Vita:",
   text: `Laurea, cambio lavoro, trasferimenti o semplicemente la sensazione di "non sapere cosa fare da grandi". Ti supporto nel fare chiarezza per prendere decisioni in piena consapevolezza.`,
   isBlack: false,
 }
 
-const IcAltroPaese: InfoCard = {
+const IcAltroPaese: InfoCardTypes = {
   icon: faEarthAmericas,
   title: "Vivere e lavorare in un altro paese:",
   text: `Trasferirsi all'estero è un'avventura, ma porta con sé solitudine e disorientamento. Ti aiuto a ritrovare il tuo equilibrio tra due culture, gestendo la distanza dagli affetti e rafforzando le tue risorse.`,
   isBlack: false,
 }
-const IcLutto: InfoCard = {
+const IcLutto: InfoCardTypes = {
   icon: faPerson,
   title: "Elaborazione del Lutto e delle Perdite:",
   text: `Perdere qualcuno o qualcosa di importante è doloroso. Può essere necessario un supporto delicato per attraversare questo momento e integrare la perdita nella tua storia di vita.`,
   isBlack: false,
 }
 
-export const LiIcArray: InfoCard[] = [IcStress, IcRelazione, IcScelteVita, IcAltroPaese, IcLutto]
+export const LiIcArray: InfoCardTypes[] = [
+  IcStress,
+  IcRelazione,
+  IcScelteVita,
+  IcAltroPaese,
+  IcLutto,
+]
 
 const ButPrimaSeduta: LinkItem = {
   trigger: "la tua prima seduta",

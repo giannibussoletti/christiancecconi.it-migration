@@ -38,10 +38,10 @@ const SocialSec = () => {
                 {socialArray.map((social) => {
                   return (
                     <Image
-                      key={social.imgLink}
+                      key={social.trigger}
                       className="cursor-pointer"
-                      src={social.imgLink}
-                      onClick={() => window.open(social.pageLink, "_blank")}
+                      src={social.trigger}
+                      onClick={() => window.open(social.href, "_blank")}
                     />
                   )
                 })}

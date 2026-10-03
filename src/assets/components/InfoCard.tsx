@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Col, Row } from "react-bootstrap"
-import type { InfoCard } from "../types"
+import type { InfoCardTypes } from "../types"
 
-const InfoCard = (infoCardProps: InfoCard) => {
+const InfoCard = (infoCardProps: InfoCardTypes) => {
   return (
     <Row className="icon-e-serv mb-4 mx-3">
       <Col xs="auto" className="p-0">

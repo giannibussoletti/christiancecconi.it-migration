@@ -9,8 +9,8 @@ const ThemeButton = (buttonProps: LinkItem) => {
     <Button
       variant="dark"
       className="rounded-pill text-uppercase theme-button border-0 px-4 py-2 mb-3 mx-3"
-      onClick={() => nav(buttonProps.link)}>
-      {buttonProps.text}
+      onClick={() => nav(buttonProps.href)}>
+      {buttonProps.trigger}
     </Button>
   )
 }

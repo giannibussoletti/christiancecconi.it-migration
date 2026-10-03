@@ -3,7 +3,7 @@ import type { LinkItem, TitledBlock } from "../../types"
 export const chiSono: TitledBlock = {
   // Abbreviato in Li
   title: "Chi Sono",
-  subtitle: "Conosciamoci meglio",
+  content: "Conosciamoci meglio",
 }
 
 export const CSText = (
@@ -34,6 +34,6 @@ export const CSText = (
 )
 
 export const ArrowLeggi: LinkItem = {
-  text: "Leggi di più",
-  link: "/",
+  trigger: "Leggi di più",
+  href: "/",
 }
