@@ -99,3 +99,13 @@ p:last-child {
 .cursor-pointer {
   cursor: pointer;
 }
+
+footer {
+  background-color: #27714b;
+  h4 {
+    // color: #fff;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed";
+    font-weight: 600;
+  }
+}

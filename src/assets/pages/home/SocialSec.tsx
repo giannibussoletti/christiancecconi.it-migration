@@ -1,5 +1,5 @@
 import { Col, Row, Image } from "react-bootstrap"
-import { socialTitle } from "../../texts/home/T_SocialSex"
+import { socialTitle } from "../../texts/home/T_SocialSec"
 import TitleSubtitle from "../../components/TitleSubtitle"
 import { useEffect, useState } from "react"
 import { fetchInsta } from "../../fetches"

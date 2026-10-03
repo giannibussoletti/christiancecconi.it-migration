@@ -22,3 +22,8 @@ export type SocialArrayTypes = {
   imgLink: string
   pageLink: string
 }
+
+export type FooterTypes = {
+  title: string
+  content: React.ReactNode
+}
