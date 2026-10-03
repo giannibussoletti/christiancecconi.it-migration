@@ -106,22 +106,24 @@ footer {
 
   .col {
     margin-bottom: 2rem;
+  }
 
-    h4 {
-      text-transform: uppercase;
-      font-family: "Roboto Condensed";
-      font-weight: 600;
-    }
+  h4 {
+    text-transform: uppercase;
+    font-family: "Roboto Condensed";
+    font-weight: 600;
+    margin: 0;
+  }
 
-    ul {
-      padding: 0;
-      list-style-type: none;
-    }
+  ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+  }
 
-    a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-    }
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
   }
 }

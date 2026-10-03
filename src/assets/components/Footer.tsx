@@ -5,10 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const Footer = () => {
   return (
     <Container>
-      <Row className="g-5">
-        <Col className="d-flex justify-content-center align-items-start">
-          <Image width={150} src="/svg/logo-bianco.svg" />
-        </Col>
+      <Row className="pt-5 text-center" xs={1} sm={2} md={2} lg={4}>
         <Col>
           <h4>Pagine</h4>
           <ul>
@@ -25,7 +22,7 @@ const Footer = () => {
           <Row xs={1}>
             {alboAndIva.map((col) => {
               return (
-                <Col key={col.title}>
+                <Col className={col.title === "partita iva" ? "mb-0 mb-sm-3" : ""} key={col.title}>
                   <h4>{col.title}</h4>
                   {col.content}
                 </Col>
@@ -48,7 +45,7 @@ const Footer = () => {
                 )
               })}
             </Col>
-            <Col>
+            <Col className="mb-0 mb-sm-3">
               <h4>Policy</h4>
               <ul>
                 {linkPolicy.map((policy) => {
@@ -61,6 +58,10 @@ const Footer = () => {
               </ul>
             </Col>
           </Row>
+        </Col>
+
+        <Col>
+          <Image width={150} src="/svg/logo-bianco.svg" />
         </Col>
       </Row>
     </Container>

@@ -15,11 +15,11 @@ export const linkPagine: LinkItem[] = [
     href: "/",
   },
   {
-    trigger: "Come funziona la seduta online",
+    trigger: "La seduta online",
     href: "/",
   },
   {
-    trigger: "I passi verso la tua prima seduta",
+    trigger: "La tua prima seduta",
     href: "/",
   },
   {
