@@ -99,6 +99,15 @@ p:last-child {
   background-size: cover;
   background-position: top left;
   height: 100vh;
+
+  h1 {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+  }
 }
 
 //INFO CARD PINK
