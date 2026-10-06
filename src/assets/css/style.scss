@@ -100,19 +100,26 @@ p:last-child {
 }
 
 //COVER PAGES
-.cover-pages {
-  background-image: url("/img/cover-pages.png");
-  background-color: #0d4571;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 20vh;
+.cover-pages-container {
+  height: 30vh;
   @include media-breakpoint-up(lg) {
     height: 40vh;
   }
-  text-align: center;
+  .cover-pages {
+    background-image: url("/img/cover-pages.png");
+    background-color: #0d4571;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    @include media-breakpoint-up(lg) {
+      height: 40vh;
+    }
+    text-align: center;
+    position: absolute;
+    top: 0;
+  }
 }
-
 //HERO SECTION
 .hero-wrapper {
   min-height: 100vh;
