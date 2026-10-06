@@ -1,14 +1,12 @@
 import { Container, Navbar, Nav, NavDropdown, Image } from "react-bootstrap"
 import { navMenu, sedutaDropdown, sedutaMenu } from "../texts/T_Navbar"
 import { useNavigate } from "react-router"
-import { useLocation } from "react-router"
 
 const NavBar = () => {
-  const pathLoc = useLocation().pathname
   const navigate = useNavigate()
 
   return (
-    <Navbar expand="lg" variant="dark" className={pathLoc !== "/" ? "bg-primary" : undefined}>
+    <Navbar expand="lg" variant="dark">
       <Container>
         <Image height={35} width={280} src="/svg/logo-nav.svg" />
 

@@ -10,7 +10,7 @@ const HeroSec = () => {
       <Row xs={1} className="m-0">
         <Col className="d-flex flex-column justify-content-center align-items-start pb-5 px-5 mt-sm-0 vh-100">
           <h1>
-            <span className="top">uno spazio sicuro</span>
+            uno spazio sicuro
             <br />
             <span className="btm">ovunque ti trovi</span>
           </h1>

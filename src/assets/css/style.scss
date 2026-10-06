@@ -18,6 +18,21 @@ body {
   color: #1d1d1b;
 }
 
+h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.1;
+  color: #fff;
+
+  .btm {
+    color: #00adda;
+  }
+}
+
 h2 {
   text-transform: uppercase;
   font-stretch: condensed;
@@ -88,31 +103,28 @@ p:last-child {
   }
 }
 
+//COVER PAGES
+.cover-pages {
+  background-image: url("/img/cover-pages.png");
+  background-color: #0d4571;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  @include media-breakpoint-up(lg) {
+    height: 40vh;
+  }
+  text-align: center;
+}
+
 //HERO SECTION
 #hero-section {
-  background-image: url("/public/img/cover-sito.jpg");
+  background-image: url("/img/cover-sito.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
   height: 100vh;
 
-  h1 {
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: 600;
-    text-transform: uppercase;
-    white-space: nowrap;
-    font-size: clamp(2.5rem, 5vw, 5rem);
-    line-height: 1.1;
-
-    .top {
-      color: #fff;
-    }
-
-    .btm {
-      color: #00adda;
-    }
-  }
   blockquote {
     line-height: 1.2;
     color: #fff;

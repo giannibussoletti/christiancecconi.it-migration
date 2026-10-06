@@ -3,10 +3,14 @@ import LavorareInsiemeSec from "./home/LavorareInsiemeSec"
 import ChiSonoSec from "./home/ChiSonoSec"
 import IlMioApproccioSec from "./home/IlMioApproccioSec"
 import SocialSec from "./home/SocialSec"
+import HeroSec from "./home/HeroSec"
 
 const Home = () => {
   return (
     <>
+      <div className="mb-4 mb-lg-5">
+        <HeroSec />
+      </div>
       <Container className="px-4">
         <div className="mb-4 mb-lg-5">
           <LavorareInsiemeSec />

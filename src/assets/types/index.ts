@@ -22,3 +22,8 @@ export type LinkSocial = {
   icon: IconDefinition
   href: string
 }
+
+export type H1Title = {
+  top: string
+  btm: string
+}
