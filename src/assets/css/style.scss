@@ -100,6 +100,11 @@ p:last-child {
   background-position: top left;
   height: 100vh;
 
+  .dropdown-menu {
+    border: 0;
+    margin-top: 0rem;
+  }
+
   h1 {
     font-family: "Oswald";
     font-style: normal;
