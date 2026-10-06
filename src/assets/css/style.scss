@@ -58,7 +58,7 @@ p:last-child {
 .navbar {
   background-color: #0d4571;
   @include media-breakpoint-up(lg) {
-    background-color: #0d467100;
+    // background-color: #0d467100;
   }
 
   .navbar-toggler {

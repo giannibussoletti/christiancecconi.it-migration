@@ -10,26 +10,24 @@ import NavBar from "./assets/components/NavBar"
 
 const App = () => {
   return (
-    <>
+    <Router>
       <header>
         <NavBar />
       </header>
       <main>
-        <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contatti" element={<Contatti />} />
-            <Route path="/chi-sono" element={<ChiSono />} />
-            <Route path="/seduta-online/il-mio-approccio" element={<Approccio />} />
-            <Route path="/seduta-online/come-funziona" element={<ComeFunziona />} />
-            <Route path="/seduta-online/i-primi-passi" element={<PrimiPassi />} />
-          </Routes>
-        </Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contatti" element={<Contatti />} />
+          <Route path="/chi-sono" element={<ChiSono />} />
+          <Route path="/seduta-online/il-mio-approccio" element={<Approccio />} />
+          <Route path="/seduta-online/come-funziona" element={<ComeFunziona />} />
+          <Route path="/seduta-online/i-primi-passi" element={<PrimiPassi />} />
+        </Routes>
       </main>
       <footer>
         <Footer />
       </footer>
-    </>
+    </Router>
   )
 }
 

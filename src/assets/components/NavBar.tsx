@@ -1,21 +1,33 @@
 import { Container, Navbar, Nav, NavDropdown, Image } from "react-bootstrap"
+import { navMenu, sedutaDropdown, sedutaMenu } from "../texts/T_Navbar"
+import { useNavigate } from "react-router"
 
 const NavBar = () => {
+  const navigate = useNavigate()
+
   return (
     <Navbar expand="lg" variant="dark">
       <Container>
         <Image height={35} width={280} src="/svg/logo-nav.svg" />
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Chi Sono</Nav.Link>
-            <Nav.Link href="#link-2">Contatti</Nav.Link>
-            <NavDropdown title="La seduta online" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Come funziona</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">I primi passi verso la seduta</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">il mio approccio</NavDropdown.Item>
+          <Nav className="ms-auto gap-lg-4">
+            {navMenu.map((nav) => {
+              return (
+                <Nav.Link key={nav.trigger} onClick={() => navigate(nav.href)}>
+                  {nav.trigger}
+                </Nav.Link>
+              )
+            })}
+            <NavDropdown title={sedutaMenu}>
+              {sedutaDropdown.map((menu) => {
+                return (
+                  <NavDropdown.Item key={menu.trigger} onClick={() => navigate(menu.href)}>
+                    {menu.trigger}
+                  </NavDropdown.Item>
+                )
+              })}
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
