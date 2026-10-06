@@ -36,8 +36,8 @@ const LavorareInsiemeSec = () => {
           <div className="d-flex justify-content-around flex-wrap text-center">
             {LiButtons.map((button) => {
               return (
-                <div>
-                  <ThemeButton key={button.trigger} {...button} />
+                <div key={button.trigger}>
+                  <ThemeButton {...button} />
                 </div>
               )
             })}
