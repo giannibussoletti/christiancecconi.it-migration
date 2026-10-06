@@ -107,6 +107,23 @@ p:last-child {
     text-transform: uppercase;
     white-space: nowrap;
     font-size: clamp(2.5rem, 5vw, 5rem);
+    line-height: 1.1;
+
+    .top {
+      color: #fff;
+    }
+
+    .btm {
+      color: #00adda;
+    }
+  }
+  blockquote {
+    line-height: 1.2;
+    color: #fff;
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
   }
 }
 
