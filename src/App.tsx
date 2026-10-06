@@ -6,13 +6,13 @@ import Approccio from "./assets/pages/la_seduta_online/Approccio"
 import ComeFunziona from "./assets/pages/la_seduta_online/ComeFunziona"
 import PrimiPassi from "./assets/pages/la_seduta_online/PrimiPassi"
 import Footer from "./assets/components/Footer"
-import NavBar from "./assets/components/NavBar"
+import HeroSec from "./assets/pages/home/HeroSec"
 
 const App = () => {
   return (
     <Router>
-      <header>
-        <NavBar />
+      <header className="mb-5">
+        <HeroSec />
       </header>
       <main>
         <Routes>
