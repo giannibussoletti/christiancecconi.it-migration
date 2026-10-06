@@ -1,4 +1,4 @@
-import type { InstagramTypes } from "../assets/fetches/fetchTypes"
+import type { InstagramTypes } from "../assets/variables/fetchTypes"
 import { Image } from "react-bootstrap"
 
 export const instaPostGenerator = (array: InstagramTypes[], i: number) => {
