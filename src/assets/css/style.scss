@@ -2,14 +2,6 @@
 
 $primary: #0d4571;
 
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/variables-dark";
-
-$custom-colors: (
-  "dark-blue": #0d4571,
-);
-$theme-colors: map-merge($theme-colors, $custom-colors);
-
 @import "bootstrap/scss/bootstrap";
 
 @import "fontFace.css";
@@ -66,12 +58,16 @@ p:last-child {
     opacity: 1;
   }
 
-  .dropdown-item {
-    color: #0d4571;
-    border: none;
+  .dropdown-menu {
+    border: 0;
 
-    &:hover {
+    .dropdown-item {
       color: #0d4571;
+      border: none;
+
+      &:hover {
+        color: #0d4571;
+      }
     }
   }
 
@@ -89,12 +85,6 @@ p:last-child {
     &::after {
       color: white;
     }
-  }
-}
-
-.navbar {
-  .dropdown-menu {
-    border: 0;
   }
 }
 

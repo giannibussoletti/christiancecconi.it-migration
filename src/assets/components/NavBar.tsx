@@ -8,7 +8,7 @@ const NavBar = () => {
   const navigate = useNavigate()
 
   return (
-    <Navbar expand="lg" variant="dark" className={pathLoc !== "/" ? "bg-dark-blue" : undefined}>
+    <Navbar expand="lg" variant="dark" className={pathLoc !== "/" ? "bg-primary" : undefined}>
       <Container>
         <Image height={35} width={280} src="/svg/logo-nav.svg" />
 
