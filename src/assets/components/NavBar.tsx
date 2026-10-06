@@ -1,17 +1,19 @@
 import { Container, Navbar, Nav, NavDropdown, Image } from "react-bootstrap"
 import { navMenu, sedutaDropdown, sedutaMenu } from "../texts/T_Navbar"
 import { useNavigate } from "react-router"
+import { useLocation } from "react-router"
 
 const NavBar = () => {
+  const pathLoc = useLocation().pathname
   const navigate = useNavigate()
 
   return (
-    <Navbar expand="lg" variant="dark">
+    <Navbar expand="lg" variant="dark" className={pathLoc !== "/" ? "bg-dark-blue" : undefined}>
       <Container>
         <Image height={35} width={280} src="/svg/logo-nav.svg" />
 
         <Navbar.Toggle />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse>
           <Nav className="ms-auto gap-lg-4">
             {navMenu.map((nav) => {
               return (
