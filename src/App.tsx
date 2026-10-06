@@ -6,27 +6,28 @@ import Approccio from "./assets/pages/la_seduta_online/Approccio"
 import ComeFunziona from "./assets/pages/la_seduta_online/ComeFunziona"
 import PrimiPassi from "./assets/pages/la_seduta_online/PrimiPassi"
 import Footer from "./assets/components/Footer"
+import NavBar from "./assets/components/NavBar"
 
 const App = () => {
   return (
-    <>
-      <header></header>
+    <Router>
+      <header>
+        <NavBar />
+      </header>
       <main>
-        <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contatti" element={<Contatti />} />
-            <Route path="/chi-sono" element={<ChiSono />} />
-            <Route path="/seduta-online/il-mio-approccio" element={<Approccio />} />
-            <Route path="/seduta-online/come-funziona" element={<ComeFunziona />} />
-            <Route path="/seduta-online/i-primi-passi" element={<PrimiPassi />} />
-          </Routes>
-        </Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contatti" element={<Contatti />} />
+          <Route path="/chi-sono" element={<ChiSono />} />
+          <Route path="/seduta-online/il-mio-approccio" element={<Approccio />} />
+          <Route path="/seduta-online/come-funziona" element={<ComeFunziona />} />
+          <Route path="/seduta-online/i-primi-passi" element={<PrimiPassi />} />
+        </Routes>
       </main>
       <footer>
         <Footer />
       </footer>
-    </>
+    </Router>
   )
 }
 

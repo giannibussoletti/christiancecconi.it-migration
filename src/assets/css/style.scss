@@ -1,4 +1,17 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap/scss/functions";
+
+$primary: #0d4571;
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+$custom-colors: (
+  "dark-blue": #0d4571,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "bootstrap/scss/bootstrap";
+
 @import "fontFace.css";
 
 html {
@@ -38,6 +51,45 @@ strong {
 
 p:last-child {
   margin-bottom: 0;
+}
+
+//NAVBAR
+
+.navbar {
+  background-color: #0d4571;
+  @include media-breakpoint-up(lg) {
+    // background-color: #0d467100;
+  }
+
+  .navbar-toggler {
+    color: #fff;
+    opacity: 1;
+  }
+
+  .dropdown-item {
+    color: #0d4571;
+    border: none;
+
+    &:hover {
+      color: #0d4571;
+    }
+  }
+
+  a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+
+    &:hover {
+      color: white;
+    }
+    &:active {
+      color: white;
+    }
+    &::after {
+      color: white;
+    }
+  }
 }
 
 //INFO CARD PINK

@@ -11,7 +11,7 @@ const Footer = () => {
           <ul>
             {linkPagine.map((pag) => {
               return (
-                <li key={pag.href}>
+                <li key={pag.trigger}>
                   <a href={pag.href}>{pag.trigger}</a>
                 </li>
               )
@@ -39,7 +39,7 @@ const Footer = () => {
                   <FontAwesomeIcon
                     size="xl"
                     onClick={() => window.open(social.href, "_blank")}
-                    key={social.href}
+                    key={social.icon.iconName}
                     icon={social.icon}
                   />
                 )
