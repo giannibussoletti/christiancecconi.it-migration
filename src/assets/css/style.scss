@@ -58,7 +58,7 @@ p:last-child {
 .navbar {
   background-color: #0d4571;
   @include media-breakpoint-up(lg) {
-    // background-color: #0d467100;
+    background-color: transparent;
   }
 
   .navbar-toggler {
@@ -90,6 +90,15 @@ p:last-child {
       color: white;
     }
   }
+}
+
+//HERO SECTION
+#hero-section {
+  background-image: url("/public/img/cover-sito.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  height: 100vh;
 }
 
 //INFO CARD PINK
