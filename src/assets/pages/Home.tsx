@@ -8,7 +8,7 @@ import HeroSec from "./home/HeroSec"
 const Home = () => {
   return (
     <>
-      <div className="mb-4 mb-lg-5">
+      <div className="hero-wrapper">
         <HeroSec />
       </div>
       <Container className="px-4">

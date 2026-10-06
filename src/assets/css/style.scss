@@ -63,11 +63,7 @@ p:last-child {
 //NAVBAR
 
 .navbar {
-  background-color: #0d4571;
-  @include media-breakpoint-up(lg) {
-    background-color: transparent;
-  }
-
+  background-color: transparent;
   .navbar-toggler {
     color: #fff;
     opacity: 1;
@@ -118,20 +114,24 @@ p:last-child {
 }
 
 //HERO SECTION
-#hero-section {
-  background-image: url("/img/cover-sito.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top left;
-  height: 100vh;
+.hero-wrapper {
+  min-height: 100vh;
+  .hero-section {
+    background-image: url("/img/cover-sito.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    position: absolute;
+    top: 0;
 
-  blockquote {
-    line-height: 1.2;
-    color: #fff;
-    font-size: clamp(1.3rem, 2vw, 2rem);
-    font-family: "Quicksand";
-    font-style: normal;
-    font-weight: 500;
+    blockquote {
+      line-height: 1.2;
+      color: #fff;
+      font-size: clamp(1.3rem, 2vw, 2rem);
+      font-family: "Quicksand";
+      font-style: normal;
+      font-weight: 500;
+    }
   }
 }
 

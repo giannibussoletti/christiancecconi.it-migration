@@ -6,7 +6,7 @@ const NavBar = () => {
   const navigate = useNavigate()
 
   return (
-    <Navbar expand="lg" variant="dark">
+    <Navbar expand="lg" variant="dark" className="z-3">
       <Container>
         <Image height={35} width={280} src="/svg/logo-nav.svg" />
 

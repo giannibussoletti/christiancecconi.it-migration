@@ -1,12 +1,10 @@
 import { Container, Col, Row } from "react-bootstrap"
-import NavBar from "../../components/NavBar"
 import ThemeButton from "../../components/ThemeButton"
 import { buttonHero } from "../../texts/home/T_HeroSection"
 
 const HeroSec = () => {
   return (
-    <Container fluid id="hero-section" className="px-0">
-      <NavBar />
+    <Container fluid className="px-0 hero-section">
       <Row xs={1} className="m-0">
         <Col className="d-flex flex-column justify-content-center align-items-start pb-5 px-5 mt-sm-0 vh-100">
           <h1>
