@@ -1,13 +1,14 @@
 import { Container } from "react-bootstrap"
 import CoverPages from "../../components/CoverPages"
 import TitleSubtitle from "../../components/TitleSubtitle"
+import { primiPassiCover, primiPassiTitle } from "../../texts/T_PrimiPassi"
 
 const PrimiPassi = () => {
   return (
     <>
-      <CoverPages top="I passi verso" btm={"la tua prima seduta"} />
+      <CoverPages {...primiPassiCover} />
       <Container>
-        <TitleSubtitle title={""} content={""} />
+        <TitleSubtitle {...primiPassiTitle} />
       </Container>
     </>
   )
