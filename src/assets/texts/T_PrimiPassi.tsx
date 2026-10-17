@@ -1,3 +1,4 @@
+import { faHandshake, faPlay } from "@fortawesome/free-solid-svg-icons"
 import type { H1Title, TitledBlock } from "../types"
 
 export const primiPassiCover: H1Title = {
@@ -10,29 +11,56 @@ export const primiPassiTitle: TitledBlock = {
   content: "I passi verso la tua prima seduta",
 }
 
+export const IntroText = (
+  <p>
+    Puoi scrivermi un messaggio o, se ne senti il bisogno, possiamo fissare{" "}
+    <strong>una breve chiamata telefonica gratuita di orientamento</strong> (della durata massima di
+    20 minuti). Questo spazio ci servirà per mettere a fuoco le tue motivazioni, capire di cosa hai
+    bisogno e valutare insieme se sono il professionista giusto per te.
+  </p>
+)
+
+export const iCPrimoContatto = {
+  icon: faHandshake,
+  title: "Il primo contatto:",
+  text: (
+    <p>
+      Puoi scrivermi un messaggio o, se ne senti il bisogno, possiamo fissare
+      <strong>una breve chiamata telefonica gratuita di orientamento</strong> (della durata massima
+      di 20 minuti). Questo spazio ci servirà per mettere a fuoco le tue motivazioni, capire di cosa
+      hai bisogno e valutare insieme se sono il professionista giusto per te.
+    </p>
+  ),
+  isBlack: false,
+}
+
+export const iCDettagliCosti = {
+  icon: faPlay,
+  title: "Dettagli pratici e costi:",
+  text: (
+    <p>
+      Se decideremo di iniziare questo percorso insieme, concorderemo giorno e orario della prima
+      seduta online. <strong>Il costo di ogni incontro della durata di 50 minuti è di 45€.</strong>{" "}
+      Ci tengo a essere subito chiaro su questo aspetto affinché tu possa valutare il tuo impegno
+      con la massima serenità.
+    </p>
+  ),
+  isBlack: false,
+}
+
 {
   /* <div class="sedute-online">
   <div class="ombre-sez-sedute-on">
     <div class="single_serv">
       <div class="tit_serv"><i class="fa-solid fa-handshake" style="color: #de007e;"></i> Il primo contatto:</div>
-      <p>
-        Puoi scrivermi un messaggio o, se ne senti il bisogno, possiamo fissare <b>una breve chiamata
-        telefonica gratuita di orientamento</b> (della durata massima di 20 minuti). Questo spazio ci
-        servirà per mettere a fuoco le tue motivazioni, capire di cosa hai bisogno e valutare
-        insieme se sono il professionista giusto per te.
-      </p>
+      
     </div>
   </div>
 
   <div class="ombre-sez-sedute-on">
     <div class="single_serv">
       <div class="tit_serv"><i class="fa-solid fa-play" style="color: #de007e;"></i> Dettagli pratici e costi:</div>
-      <p>
-        Se decideremo di iniziare questo percorso insieme, concorderemo giorno e orario della prima
-        seduta online. <b>Il costo di ogni incontro della durata di 50 minuti è di 45€.</b> Ci tengo a
-        essere subito chiaro su questo aspetto affinché tu possa valutare il tuo impegno con la
-        massima serenità.
-      </p>
+      
     </div>
   </div>
 </div> */
