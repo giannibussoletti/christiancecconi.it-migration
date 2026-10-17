@@ -19,7 +19,14 @@ const PrimiPassi = () => {
         {IntroText}
         <Row>
           <Col xs={12} lg={3} className="p-0 mb-4 mb-lg-0 pe-lg-3">
-            <Image className="main-imgs w-100 " src="/img/prima-visita-clock.jpg" />
+            <Image
+              className="main-imgs w-100 d-inline d-lg-none d-xl-inline"
+              src="/img/prima-visita-clock.jpg"
+            />
+            <Image
+              className="main-imgs w-100 d-none d-lg-inline d-xl-none"
+              src="/img/prima-visita-clock-v.jpg"
+            />
           </Col>
           <Col xs={12} lg={9}>
             <Row>
