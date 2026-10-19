@@ -4,7 +4,7 @@ import type { InfoCardTypes } from "../types"
 
 const InfoCard = (infoCardProps: InfoCardTypes) => {
   return (
-    <Row className="icon-e-serv mb-4 mx-3">
+    <Row className="icon-e-serv mb-4">
       <Col xs="auto" className="p-0">
         <FontAwesomeIcon
           icon={infoCardProps.icon}
@@ -13,7 +13,9 @@ const InfoCard = (infoCardProps: InfoCardTypes) => {
       </Col>
       <Col>
         {infoCardProps.title && <h4 className="tit-serv mb-1">{infoCardProps.title}</h4>}
-        <p className={infoCardProps.isBlack ? "prep-tera mb-0" : "mb-0"}>{infoCardProps.text}</p>
+        <div className={infoCardProps.isBlack ? "prep-tera mb-0" : "mb-0"}>
+          {infoCardProps.text}
+        </div>
       </Col>
     </Row>
   )

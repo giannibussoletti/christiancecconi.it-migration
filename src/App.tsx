@@ -17,10 +17,15 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* Da fare */}
           <Route path="/contatti" element={<Contatti />} />
+          {/* Fatta */}
           <Route path="/chi-sono" element={<ChiSono />} />
+          {/* Da fare */}
           <Route path="/seduta-online/il-mio-approccio" element={<Approccio />} />
+          {/* Da fare */}
           <Route path="/seduta-online/come-funziona" element={<ComeFunziona />} />
+          {/* Da fare */}
           <Route path="/seduta-online/i-primi-passi" element={<PrimiPassi />} />
         </Routes>
       </main>
