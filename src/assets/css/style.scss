@@ -35,7 +35,8 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-  font-stretch: condensed;
+  font-family: "Roboto Condensed";
+  font-style: normal;
   color: #de007e;
   font-size: 1.35em;
   font-weight: 400;
@@ -216,6 +217,17 @@ p:last-child {
         color: #27714b;
       }
     }
+  }
+}
+
+// LIST CARD IMPREVISTI E PAGAMENTI
+#first-session {
+  padding: 0 20px;
+  li {
+    list-style-type: disc;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 500;
   }
 }
 
