@@ -1,9 +1,9 @@
 import type { IconDefinition } from "@fortawesome/free-solid-svg-icons"
 import type React from "react"
 
-export type TitleSubtitleTypes = {
+export type TitledBlock = {
   title: string
-  subtitle?: React.ReactNode
+  content?: React.ReactNode
 }
 
 export type InfoCardTypes = {
@@ -13,12 +13,17 @@ export type InfoCardTypes = {
   isBlack: boolean
 }
 
-export type ButtonTypes = {
-  text: string
-  link: string
+export type LinkItem = {
+  trigger: string
+  href: string
 }
 
-export type SocialArrayTypes = {
-  imgLink: string
-  pageLink: string
+export type LinkSocial = {
+  icon: IconDefinition
+  href: string
+}
+
+export type H1Title = {
+  top: string
+  btm: string
 }

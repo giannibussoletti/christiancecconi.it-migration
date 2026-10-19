@@ -15,7 +15,7 @@ const LavorareInsiemeSec = () => {
       <Row>
         <TitleSubtitle {...lavorareInsieme} />
       </Row>
-      <Row xs={1} className="mb-xl-4">
+      <Row xs={1} className="mb-2 mb-lg-4">
         <Col lg={3}>
           <Image src="/img/flower-hp.jpg" className="w-100 main-imgs" />
         </Col>
@@ -33,9 +33,13 @@ const LavorareInsiemeSec = () => {
         })}
         <Col>
           <p>{LITextBottom}</p>
-          <div className="d-lg-flex justify-content-around flex-wrap text-center">
+          <div className="d-flex justify-content-around flex-wrap text-center">
             {LiButtons.map((button) => {
-              return <ThemeButton key={button.text} {...button} />
+              return (
+                <div key={button.trigger}>
+                  <ThemeButton {...button} />
+                </div>
+              )
             })}
           </div>
         </Col>

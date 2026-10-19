@@ -1,27 +1,29 @@
-import type { ButtonTypes, TitleSubtitleTypes } from "../../types"
+import type { LinkItem, TitledBlock } from "../../types"
 
-export const mioApproccio: TitleSubtitleTypes = {
+export const mioApproccio: TitledBlock = {
   title: "Il mio approccio",
-  subtitle: "Oltre le parole, e dentro le tue passioni	",
+  content: "Oltre le parole, e dentro le tue passioni	",
 }
 
 export const ImaText = (
   <>
     <p>
-      Insieme possiamo intraprendere <b>un percorso cucito su misura</b>, che metta al centro le tue
-      passioni ed i tuoi interessi per permetterci di lavorare a fondo sulle tue necessità e sugli
-      obiettivi che ti hanno spinto a intraprendere questo percorso.
+      Insieme possiamo intraprendere <strong>un percorso cucito su misura</strong>, che metta al
+      centro le tue passioni ed i tuoi interessi per permetterci di lavorare a fondo sulle tue
+      necessità e sugli obiettivi che ti hanno spinto a intraprendere questo percorso.
     </p>
 
     <p>
       Che sia attraverso le dinamiche del tuo videogioco preferito, una campagna di gioco di ruolo o
       l'uso creativo di immagini e storie, esploreremo insieme le tue emozioni e il tuo vissuto{" "}
-      <b>rovando insieme il linguaggio più naturale per dare voce al tuo mondo interiore.</b>
+      <strong>
+        rovando insieme il linguaggio più naturale per dare voce al tuo mondo interiore.
+      </strong>
     </p>
   </>
 )
 
-export const ArrowApproccio: ButtonTypes = {
-  text: "scopri di più sul mio approccio",
-  link: "/",
+export const ArrowApproccio: LinkItem = {
+  trigger: "scopri di più sul mio approccio",
+  href: "/",
 }

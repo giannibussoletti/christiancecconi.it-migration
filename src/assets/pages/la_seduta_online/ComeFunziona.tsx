@@ -5,7 +5,7 @@ const ComeFunziona = () => {
   return (
     <>
       {ICSedute.map((info) => {
-        return <InfoCard {...info} />
+        return <InfoCard key={info.icon.iconName} {...info} />
       })}
     </>
   )

@@ -1,9 +1,9 @@
-import type { ButtonTypes, TitleSubtitleTypes } from "../../types"
+import type { LinkItem, TitledBlock } from "../../types"
 
-export const chiSono: TitleSubtitleTypes = {
+export const chiSono: TitledBlock = {
   // Abbreviato in Li
   title: "Chi Sono",
-  subtitle: "Conosciamoci meglio",
+  content: "Conosciamoci meglio",
 }
 
 export const CSText = (
@@ -33,7 +33,7 @@ export const CSText = (
   </>
 )
 
-export const ArrowLeggi: ButtonTypes = {
-  text: "Leggi di più",
-  link: "/",
+export const ArrowLeggi: LinkItem = {
+  trigger: "Leggi di più",
+  href: "/",
 }

@@ -5,12 +5,12 @@ import {
   faMap,
   faPerson,
 } from "@fortawesome/free-solid-svg-icons"
-import type { ButtonTypes, InfoCardTypes, TitleSubtitleTypes } from "../../types"
+import type { LinkItem, InfoCardTypes, TitledBlock } from "../../types"
 
-export const lavorareInsieme: TitleSubtitleTypes = {
+export const lavorareInsieme: TitledBlock = {
   // Abbreviato in Li
   title: "Ciò su cui possiamo lavorare insieme",
-  subtitle: "Alcuni dei temi che potremo affrontare nelle nostre sedute online",
+  content: "Alcuni dei temi che potremo affrontare nelle nostre sedute online",
 }
 
 export const LITextTop = (
@@ -75,14 +75,14 @@ export const LiIcArray: InfoCardTypes[] = [
   IcLutto,
 ]
 
-const ButPrimaSeduta: ButtonTypes = {
-  text: "la tua prima seduta",
-  link: "/",
+const ButPrimaSeduta: LinkItem = {
+  trigger: "la tua prima seduta",
+  href: "/",
 }
 
-const ButComeFunge: ButtonTypes = {
-  text: "la seduta online",
-  link: "/",
+const ButComeFunge: LinkItem = {
+  trigger: "la seduta online",
+  href: "/",
 }
 
-export const LiButtons: ButtonTypes[] = [ButComeFunge, ButPrimaSeduta]
+export const LiButtons: LinkItem[] = [ButComeFunge, ButPrimaSeduta]
