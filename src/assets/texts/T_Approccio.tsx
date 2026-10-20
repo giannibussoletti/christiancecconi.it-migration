@@ -36,14 +36,16 @@ export const cosaSignificaInfo: InfoCardTypes = {
   icon: faGamepad,
   title: "Perché utilizzare le tue passioni come alleati in terapia?",
   text: (
-    <>
-      <p>
+    <ul>
+      <li>
         Le tue passioni sono una parte importante di te e possono aiutarti davvero a coltivare il
-        tuo benessere. <br />È più facile comprendere la complessità interiore traducendola nelle
-        dinamiche e nelle meccaniche che possiamo incontrare nelle storie dei personaggi o dei
-        giochi che amiamo.
-      </p>
-    </>
+        tuo benessere.
+      </li>
+      <li>
+        È più facile comprendere la complessità interiore traducendola nelle dinamiche e nelle
+        meccaniche che possiamo incontrare nelle storie dei personaggi o dei giochi che amiamo.
+      </li>
+    </ul>
   ),
   isBlack: false,
 }
@@ -77,13 +79,16 @@ export const cosaSignificaInfoBtm: InfoCardTypes = {
   icon: faBrush,
   title: "Perché le arti espressive possono supportarti nel percorso?",
   text: (
-    <>
-      <p>
+    <ul>
+      <li>
         La creatività costruisce un fantastico ponte per far emergere i tuoi vissuti e il tuo
-        sentire. <br /> Non serve essere grandi artisti o scrittori, tutto ciò che serve è il
-        lasciar fluire ciò che c'è, sperimentare, per andare oltre alle parole.
-      </p>
-    </>
+        sentire.
+      </li>
+      <li>
+        Non serve essere grandi artisti o scrittori, tutto ciò che serve è il lasciar fluire ciò che
+        c'è, sperimentare, per andare oltre alle parole.
+      </li>
+    </ul>
   ),
   isBlack: false,
 }

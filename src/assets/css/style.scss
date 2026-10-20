@@ -147,7 +147,19 @@ p:last-child {
 
 .icon-e-serv {
   padding: 20px;
+
+  ul {
+    padding: 0;
+    li {
+      list-style-type: none;
+      position: relative;
+      margin-bottom: 0.5em;
+      font-style: italic;
+      font-weight: 500;
+    }
+  }
 }
+
 .icon-e-serv,
 .main-imgs {
   border-radius: 25px;
