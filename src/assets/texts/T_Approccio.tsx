@@ -1,4 +1,4 @@
-import { faGamepad } from "@fortawesome/free-solid-svg-icons"
+import { faBrush, faGamepad } from "@fortawesome/free-solid-svg-icons"
 import type { H1Title, InfoCardTypes, TitledBlock } from "../types"
 
 export const approccioCover: H1Title = {
@@ -42,6 +42,46 @@ export const cosaSignificaInfo: InfoCardTypes = {
         tuo benessere. <br />È più facile comprendere la complessità interiore traducendola nelle
         dinamiche e nelle meccaniche che possiamo incontrare nelle storie dei personaggi o dei
         giochi che amiamo.
+      </p>
+    </>
+  ),
+  isBlack: false,
+}
+
+export const approccioMiddleTitle: TitledBlock = {
+  title: "Le tecniche espressive",
+  content: "Diamo spazio alla creatività per dare forma a ciò che senti",
+}
+
+export const approccioMiddleText = (
+  <p>
+    Raccontare con le parole ciò che proviamo, ciò che sentiamo a livello profondo, può essere
+    difficile. Per questo <strong>penso che il supporto di tecniche espressive</strong> come il
+    disegno, la scrittura creativa, ma anche l'ideazione di storie o il richiamo di immagini,{" "}
+    <strong>possa fare la differenza per aiutarci a dare una forma a ciò che proviamo.</strong>
+  </p>
+)
+
+export const approccioSubText = (
+  <p>
+    Significa che insieme possiamo provare a disegnare o a descrivere il "mostro" che rappresenta le
+    tue ansie o le tue paure, per guardarlo in faccia e provare a comprenderlo; significa che{" "}
+    <strong>
+      possiamo usare immagini, carte, o racconti per riuscire a creare una mappa dei tuoi stati
+      d'animo.
+    </strong>
+  </p>
+)
+
+export const cosaSignificaInfoBtm: InfoCardTypes = {
+  icon: faBrush,
+  title: "Perché le arti espressive possono supportarti nel percorso?",
+  text: (
+    <>
+      <p>
+        La creatività costruisce un fantastico ponte per far emergere i tuoi vissuti e il tuo
+        sentire. <br /> Non serve essere grandi artisti o scrittori, tutto ciò che serve è il
+        lasciar fluire ciò che c'è, sperimentare, per andare oltre alle parole.
       </p>
     </>
   ),
