@@ -8,7 +8,7 @@ const CoverPages = ({ top, btm }: H1Title) => {
         <Row className="h-100">
           <Col className="d-flex justify-content-center align-items-center">
             <h1>
-              {top} <span className="btm">{btm}</span>
+              {top} <br /> <span className="btm">{btm}</span>
             </h1>
           </Col>
         </Row>
