@@ -1,10 +1,14 @@
 import InfoCard from "../../components/InfoCard"
-import { ICSedute } from "../../texts/textSeduteOnline"
+import { ICSeduteNere, ICSeduteRosa } from "../../texts/T_SeduteOnline"
 
 const ComeFunziona = () => {
   return (
     <>
-      {ICSedute.map((info) => {
+      {ICSeduteRosa.map((info) => {
+        return <InfoCard key={info.icon.iconName} {...info} />
+      })}
+
+      {ICSeduteNere.map((info) => {
         return <InfoCard key={info.icon.iconName} {...info} />
       })}
     </>
