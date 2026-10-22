@@ -43,7 +43,7 @@ export const ICSeduteRosa: InfoCardTypes[] = [
   {
     icon: faCouch,
     title: "Ottimizzazione:",
-    text: "Elimina i tempi di spostamento permettendoti di arrivare alla seduta più riposato mentalmente e dandoti pieno controllo sul tuo spazio.",
+    text: "Elimina la fatica del viaggio e ti permette di arrivare alla seduta più riposato mentalmente e dandoti pieno controllo sul tuo spazio.",
     isBlack: false,
   },
 ]
