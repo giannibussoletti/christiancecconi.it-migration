@@ -6,14 +6,19 @@ import {
   faHourglassHalf,
   faWifi,
 } from "@fortawesome/free-solid-svg-icons"
-import type { InfoCardTypes, TitledBlock } from "../types"
+import type { H1Title, InfoCardTypes, TitledBlock } from "../types"
 
-export const seduteOnlineTitle: TitledBlock = {
+export const coverCF: H1Title = {
+  top: "come funziona",
+  btm: "una seduta online",
+}
+
+export const titleCF: TitledBlock = {
   title: "Il Setting Online",
   content: "Perché scegliere un percorso da remoto",
 }
 
-export const seduteOnlineIntro = (
+export const introCF = (
   <p>
     Le sessioni di supporto e sostegno psicologico svolte da remoto offrono la possibilità di
     conciliare le necessità di ognuno, andando ad abbattere barriere geografiche e difficoltà
