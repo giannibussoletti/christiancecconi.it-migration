@@ -23,10 +23,10 @@ const LavorareInsiemeSec = () => {
           {LITextTop}
         </Col>
       </Row>
-      <Row xs={1} xl={3}>
+      <Row xs={1} xl={3} className="g-0 g-xl-5">
         {LiIcArray.map((card) => {
           return (
-            <Col key={card.title} className="p-0">
+            <Col key={card.title}>
               <InfoCard {...card} />
             </Col>
           )

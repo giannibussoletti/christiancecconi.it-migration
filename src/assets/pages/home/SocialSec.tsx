@@ -4,7 +4,7 @@ import TitleSubtitle from "../../components/TitleSubtitle"
 import { useEffect, useState } from "react"
 import { fetchInsta } from "../../variables"
 import type { InstagramTypes } from "../../variables/fetchTypes"
-import { socialArray } from "../../arrays"
+import { socialArray } from "../../texts/home/T_SocialSec"
 import { instaPostGenerator } from "../../../functions/functions"
 
 const SocialSec = () => {

@@ -1,8 +1,8 @@
 import type { H1Title, LinkItem, TitledBlock } from "../types"
 
 export const ChiSonoCover: H1Title = {
-  top: "chi",
-  btm: "sono",
+  top: "mi presento",
+  btm: "piacere, Christian",
 }
 
 export const ChiSonoTitle: TitledBlock = {
@@ -71,7 +71,7 @@ export const ChiSonoText = (
 
     <em>
       “Il cambiamento è possibile, ma deve partire dall’accettazione di sé stessi.” <br />-
-      <strong>Alexander Lowen</strong>
+      Alexander Lowen
     </em>
   </>
 )
