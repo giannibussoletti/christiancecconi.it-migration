@@ -65,3 +65,11 @@ export const ICSeduteNere: InfoCardTypes[] = [
     isBlack: true,
   },
 ]
+
+export const citCF = (
+  <em>
+    {" "}
+    La terapia richiede un <strong>"luogo sicuro"</strong>, anche a distanza. Per garantire la buona
+    riuscita della seduta è necessario:
+  </em>
+)
